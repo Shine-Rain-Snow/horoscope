@@ -11,8 +11,10 @@ export class IntroComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-     setInterval(this.movePhoto, 4000);
-     setInterval(this.moveVideo, 4000);
+    this.movePhoto();
+    this.moveVideo();
+     setInterval(this.movePhoto, 11600);
+     setInterval(this.moveVideo, 11600);
   }
   movePhoto() {
     if($("span:first-child").hasClass("active")){
@@ -25,9 +27,10 @@ export class IntroComponent implements OnInit {
         });
         $(".photo").animate({
             top: '-=100%'
-          },
+          }, 
           {
-            duration: 3000,
+            duration: 11000,
+            easing: "linear",
             complete: function() {
               
               $("span:nth-child(3)").css({
@@ -61,9 +64,10 @@ export class IntroComponent implements OnInit {
           });
           $(".photo").animate({
             top: '-=100%'
-          },
+          }, 
           {
-            duration: 3000,
+            duration: 11000,
+            easing: "linear",
             complete: function() {
               
               $("span:nth-child(1)").css({
@@ -97,9 +101,10 @@ export class IntroComponent implements OnInit {
           });
         $(".photo").animate({
             top: '-=100%'
-          },
+          }, 
           {
-            duration: 3000,
+            duration: 11000,
+            easing: "linear",
             complete: function() {
               
               $("span:nth-child(1)").css({
@@ -137,7 +142,8 @@ export class IntroComponent implements OnInit {
             top: '-=100%'
           },
           {
-            duration: 3000,
+            duration: 11000,
+            easing: "linear",
             complete: function() {
               
               $("span:nth-child(3)").css({
@@ -173,7 +179,8 @@ export class IntroComponent implements OnInit {
             top: '-=100%'
           },
           {
-            duration: 3000,
+            duration: 11000,
+            easing: "linear",
             complete: function() {
               
               $("span:nth-child(1)").css({
@@ -209,7 +216,8 @@ export class IntroComponent implements OnInit {
             top: '-=100%'
           },
           {
-            duration: 3000,
+            duration: 11000,
+            easing: "linear",
             complete: function() {
               
               $("span:nth-child(1)").css({
