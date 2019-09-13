@@ -1,5 +1,46 @@
 <div class="intro">
 	<div class="flow-bottom-top">
-		
+		<div class="photo">
+			<div class="photo_1"></div>
+			<div class="photo_2"></div>
+			<div class="photo_3"></div>
+		</div>
+		<!-- <div class="video">
+			<div class="video_1"></div>
+			<div class="video_2"></div>
+			<div class="video_3"></div>
+		</div> -->
+		<style> 
+			.photo {
+				width: 100px;
+				height: 100%;
+				position: absolute;
+				right: 5%;
+			}
+			.photo_1 {
+				width: 100px;
+				height: 100%;
+				background: red;
+				position: absolute;
+				top: 0%;
+			}
+			.photo_2 {
+				height: 100%;
+				background: blue;
+				position: absolute;
+				top: -100%;
+			}
+			.photo_3 {
+				height: 100%;
+				background: yellow;
+				position: absolute;
+				top: -200%;
+			}
+		</style>
+		<script type="text/javascript">
+			$(".photo").click({
+				alert('a');
+			});
+		</script>		
 	</div>
 </div>
