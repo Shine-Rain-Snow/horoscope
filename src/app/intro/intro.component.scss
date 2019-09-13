@@ -10,3 +10,47 @@
 .flow-bottom-top {
 	height: 100%;
 }
+
+.show_window {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	right: 5%;
+	top: 0%;
+	overflow: hidden;
+}
+
+.photo {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	right: 5%;
+	top: 0%;
+	
+}
+
+
+.photo_1 {
+	width: 100px;
+	height: 100%;
+	background: red;
+	position: absolute;
+	top: 0%;
+	right: 5%;
+}
+.photo_2 {
+	width: 100px;
+	height: 100%;
+	background: blue;
+	position: absolute;
+	top: 100%;
+	right: 5%;
+}
+.photo_3 {
+	width: 100px;
+	height: 100%;
+	background: yellow;
+	position: absolute;
+	top: 100%;
+	right: 5%;
+}
