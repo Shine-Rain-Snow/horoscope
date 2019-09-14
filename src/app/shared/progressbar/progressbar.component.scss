@@ -33,15 +33,27 @@ mat-progress-bar{
   margin: 0 0;
 }
 
+.progressbar {
+  height: 80px;
+}
+
 .progressbar:hover {
   .bar_text {
     visibility: visible;
+  }
+}
 
+.progress-section {
+  height: 80px;
+}
+
+.progress-section:hover {
+  .bar_text {
+    visibility: visible;
   }
 }
 
 .bar_text {
-  height: 40px;
   visibility: hidden;
 }
 
