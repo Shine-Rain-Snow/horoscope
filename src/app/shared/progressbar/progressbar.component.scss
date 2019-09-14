@@ -7,7 +7,7 @@
 .progress-section {
   
   text-align: center;
-  width: 20% !important; 
+  width: 18% !important; 
   padding: 0 2%;
 }
 
@@ -32,3 +32,16 @@ mat-progress-bar{
 .progress-margin {
   margin: 0 0;
 }
+
+.progressbar:hover {
+  .bar_text {
+    visibility: visible;
+
+  }
+}
+
+.bar_text {
+  height: 40px;
+  visibility: hidden;
+}
+
