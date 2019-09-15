@@ -11,7 +11,14 @@ export class AstInnerComponent implements OnInit {
   constructor() { }
   
   ngOnInit() {
-   this.scrolling();    
+   this.scrolling(); 
+   var hei = $("body").height();
+   $(".sunsign_text").children().css({
+   	height: hei*0.4+'px'	
+   });
+   $(".sunsign_img").children().css({
+   	height: hei*0.3+'px'	
+   })
   }
 
   scrolling() {
