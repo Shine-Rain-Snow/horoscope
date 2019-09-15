@@ -1,0 +1,67 @@
+.ast-inner {
+	height: 100%;
+	width: 100%;
+}
+
+.ast-inner-container {
+	background-color: rgb(167,194,178);
+	height: 100%;
+	width: 100%;
+	z-index: 20;
+}
+
+.ast-inner-carousel {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+
+.g-scrolling-carousel {
+    position: absolute;
+}
+.g-scrolling-carousel .items {
+    
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+.g-scrolling-carousel .items::-webkit-scrollbar { 
+    display: none; 
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.container { margin: 0 auto; max-width: 100%; height: 100%;}
+.g-scrolling-carousel .items{
+    background-color: #fff;
+}
+.g-scrolling-carousel .items > div {
+    display: inline-block;
+     /* notice the comments between inline-block items */
+    margin-right: 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.g-scrolling-carousel, .items {
+  width: 100%;
+  height: 100%;
+}
+
+.items {
+	
+}
