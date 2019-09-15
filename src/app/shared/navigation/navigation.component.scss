@@ -16,14 +16,20 @@ a:hover, a:active{
 .menu {
     position: absolute;
     right: 8%;
+    //color: #23abd4;
     color: white;
     font-size: 16px;
     cursor: pointer;
     z-index: 80;
+
 }
 
 .menu span {
     z-index: 50;
+    // text-shadow: -1px 1px 0 #fff, 
+    //                       1px 1px 0 #fff, 
+    //                      1px -1px 0 #fff, 
+    //                     -1px -1px 0 #fff; 
 }
 
 .header {

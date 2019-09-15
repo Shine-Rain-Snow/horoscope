@@ -12,9 +12,9 @@ export class IntroComponent implements OnInit {
 
   ngOnInit() {
     this.movePhoto();
-    this.moveVideo();
+    //this.moveVideo();
      setInterval(this.movePhoto, 11600);
-     setInterval(this.moveVideo, 11600);
+     //setInterval(this.moveVideo, 11600);
   }
   movePhoto() {
     if($(".photo span:first-child").hasClass("active")){

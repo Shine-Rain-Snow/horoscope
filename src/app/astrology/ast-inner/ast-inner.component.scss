@@ -163,10 +163,12 @@ img {
 }
 
 .ast-inner-title {
-	font-weight: bold;	
+	
 	font-size: 26px;
 	position: absolute;
 	top: 15%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	cursor: pointer;
+	z-index: 30;
 }

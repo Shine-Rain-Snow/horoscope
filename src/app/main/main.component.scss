@@ -1,8 +1,46 @@
 .main {
 	// background-image: url("../../assets/img/temp.jpg");
-	background-color: rgb(64,66,105);
-	height: 100%; 
-	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
+	// background-color: rgb(64,66,105);
+	// height: 100%; 
+	// background-position: center;
+ //  	background-repeat: no-repeat;
+ //  	background-size: cover;
+ background-color: white;
+ width: 100%;
+ height: 100%;
+}
+// 244, 135, 42
+.loading {
+	font-weight: 1000;
+	font-size: 100px;
+	position: absolute;
+	color: rgb(230, 231, 233);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+
+.method-1 {
+  position: relative;
+  display: inline-block;
+  font-size: 100px;
+ 
+
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    color: rgb(244, 135, 42);
+    // animation: fill-1 20s infinite;
+    animation: fill-1 6s;
+  }
+}
+
+@keyframes fill-1 {
+  50%   { width: 50%; }
+  100%  { width: 100%;   }
 }

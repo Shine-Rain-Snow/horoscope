@@ -42,26 +42,26 @@
 	
 }
 
-.ast_title {
-	position: absolute;
-	top: 50%;
-	left: 10%;
-	width: 36%;
-	color: white;
-	height: auto;
-	font-size: 30px;
-	cursor: pointer;
-	font-weight: bold;
-}
 
 $main-color: #23abd4;
 
-.ast_title {
+.ast_entry_title {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 25%;
+  color: white;
+  height: auto;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.ast_entry_title {
 	
       text-decoration:none;
       display:block;
       padding:5px 0;
-      font-family:'Open Sans';
       position:relative;
       z-index:1;
       -webkit-background-clip: text;
@@ -82,4 +82,15 @@ $main-color: #23abd4;
         }
       }
     
+}
+
+.ast-title {
+  
+  font-size: 26px;
+  position: absolute;
+  color: white;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }

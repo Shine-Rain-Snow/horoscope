@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'main',
     pathMatch: 'full'
   }
 ];
