@@ -2,8 +2,13 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
     height: 100%;   
 }
 
+mat-sidenav-content {
+
+}
+
 mat-sidenav {
     width: 250px;
+    cursor: pointer;
 }
  
 mat-sidenav {
@@ -28,3 +33,4 @@ mat-sidenav {
 	cursor: pointer;
 	height: 40px;
 }
+

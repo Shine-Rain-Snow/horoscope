@@ -17,9 +17,13 @@ a:hover, a:active{
     position: absolute;
     right: 8%;
     color: white;
-    z-index: 10;
     font-size: 16px;
     cursor: pointer;
+    z-index: 80;
+}
+
+.menu span {
+    z-index: 50;
 }
 
 .header {
@@ -30,11 +34,13 @@ a:hover, a:active{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .page_logo {
     position: absolute;
     left: 8%;
+    z-index: 20;
 }
 
 .page_title {

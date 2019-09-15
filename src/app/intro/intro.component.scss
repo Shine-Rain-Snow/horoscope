@@ -35,7 +35,7 @@
 
 .photo img {
 	width: 300px;
-	height: 300px;
+	height: auto;
 	padding-top: 20%;
  	opacity: 0.5;
     filter: alpha(opacity=50); 
@@ -48,20 +48,20 @@
 
 
 
-.video video {
+.movies video {
 	position: relative;
 	top: 60%;
 	opacity: 0.5;
     filter: alpha(opacity=50);
 }
 
-.video video:hover {
+.movies video:hover {
 	
 	opacity: 0.8;
     filter: alpha(opacity=80); 
 }
 
-.video {
+.movies {
 	width: 400px;
 	height: 100%;
 	position: absolute;

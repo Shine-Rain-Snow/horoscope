@@ -17,12 +17,12 @@ export class IntroComponent implements OnInit {
      setInterval(this.moveVideo, 11600);
   }
   movePhoto() {
-    if($("span:first-child").hasClass("active")){
+    if($(".photo span:first-child").hasClass("active")){
      
-        $("span").css({
+        $(".photo span").css({
           visibility:'visible'
         });
-        $("span:nth-child(3)").css({
+        $(".photo span:nth-child(3)").css({
           visibility: 'hidden'
         });
         $(".photo").animate({
@@ -33,33 +33,33 @@ export class IntroComponent implements OnInit {
             easing: "linear",
             complete: function() {
               
-              $("span:nth-child(3)").css({
+              $(".photo span:nth-child(3)").css({
                 top: '100%'
               });
-              $("span:nth-child(2)").css({
+              $(".photo span:nth-child(2)").css({
                 top: '0%'
               });
-              $("span:nth-child(1)").css({
+              $(".photo span:nth-child(1)").css({
                 top: '100%'
               });
               $(".photo").css({
                 top: '0%'
               });
-              $("span:first-child").removeClass('active');
-              $("span:nth-child(2)").addClass('active');
-              $("span:nth-child(2)").removeClass('prev');
-              $("span:nth-child(3)").addClass('prev');
+              $(".photo span:first-child").removeClass('active');
+              $(".photo span:nth-child(2)").addClass('active');
+              $(".photo span:nth-child(2)").removeClass('prev');
+              $(".photo span:nth-child(3)").addClass('prev');
             }
           });
           
     }
 
-    if($("span:nth-child(2)").hasClass("active")){
+    if($(".photo span:nth-child(2)").hasClass("active")){
      
-         $("span").css({
+         $(".photo span").css({
           visibility:'visible'
           });
-          $("span:nth-child(1)").css({
+          $(".photo span:nth-child(1)").css({
             visibility: 'hidden'
           });
           $(".photo").animate({
@@ -70,33 +70,33 @@ export class IntroComponent implements OnInit {
             easing: "linear",
             complete: function() {
               
-              $("span:nth-child(1)").css({
+              $(".photo span:nth-child(1)").css({
                 top: '100%'
               });
-              $("span:nth-child(3)").css({
+              $(".photo span:nth-child(3)").css({
                 top: '0%'
               });
-              $("span:nth-child(2)").css({
+              $(".photo span:nth-child(2)").css({
                 top: '100%'  
               });
               $(".photo").css({
                 top: '0%'
               });
-              $("span:nth-child(2)").removeClass('active');
-              $("span:nth-child(3)").addClass('active');
-              $("span:nth-child(3)").removeClass('prev');
-              $("span:nth-child(1)").addClass('prev');
+              $(".photo span:nth-child(2)").removeClass('active');
+              $(".photo span:nth-child(3)").addClass('active');
+              $(".photo span:nth-child(3)").removeClass('prev');
+              $(".photo span:nth-child(1)").addClass('prev');
             }
           });
           
     }
 
-    if($("span:nth-child(3)").hasClass("active")){
+    if($(".photo span:nth-child(3)").hasClass("active")){
       
-         $("span").css({
+         $(".photo span").css({
           visibility:'visible'
           });
-          $("span:nth-child(2)").css({
+          $(".photo span:nth-child(2)").css({
             visibility: 'hidden'
           });
         $(".photo").animate({
@@ -107,22 +107,22 @@ export class IntroComponent implements OnInit {
             easing: "linear",
             complete: function() {
               
-              $("span:nth-child(1)").css({
+              $(".photo span:nth-child(1)").css({
                 top: '0%'
               });
-              $("span:nth-child(3)").css({
+              $(".photo span:nth-child(3)").css({
                 top: '100%'
               });
-              $("span:nth-child(2)").css({
+              $(".photo span:nth-child(2)").css({
                 top: '100%'  
               });
               $(".photo").css({
                 top: '0%'
               });
-              $("span:nth-child(3)").removeClass('active');
-              $("span:nth-child(1)").addClass('active');
-              $("span:first-child").removeClass('prev');
-              $("span:nth-child(2)").addClass('prev');
+              $(".photo span:nth-child(3)").removeClass('active');
+              $(".photo span:nth-child(1)").addClass('active');
+              $(".photo span:first-child").removeClass('prev');
+              $(".photo span:nth-child(2)").addClass('prev');
             }
           });
     }
@@ -130,15 +130,15 @@ export class IntroComponent implements OnInit {
 
 
   moveVideo() {
-    if($("span:first-child").hasClass("active")){
+    if($(".movies span:first-child").hasClass("active")){
      
-        $("span").css({
+        $(".movies span").css({
           visibility:'visible'
         });
-        $("span:nth-child(3)").css({
+        $(".movies span:nth-child(3)").css({
           visibility: 'hidden'
         });
-        $(".video").animate({
+        $(".movies").animate({
             top: '-=100%'
           },
           {
@@ -146,36 +146,36 @@ export class IntroComponent implements OnInit {
             easing: "linear",
             complete: function() {
               
-              $("span:nth-child(3)").css({
+              $(".movies span:nth-child(3)").css({
                 top: '100%'
               });
-              $("span:nth-child(2)").css({
+              $(".movies span:nth-child(2)").css({
                 top: '0%'
               });
-              $("span:nth-child(1)").css({
+              $(".movies span:nth-child(1)").css({
                 top: '100%'
               });
-              $(".video").css({
+              $(".movies").css({
                 top: '0%'
               });
-              $("span:first-child").removeClass('active');
-              $("span:nth-child(2)").addClass('active');
-              $("span:nth-child(2)").removeClass('prev');
-              $("span:nth-child(3)").addClass('prev');
+              $(".movies span:first-child").removeClass('active');
+              $(".movies span:nth-child(2)").addClass('active');
+              $(".movies span:nth-child(2)").removeClass('prev');
+              $(".movies span:nth-child(3)").addClass('prev');
             }
           });
           
     }
 
-    if($("span:nth-child(2)").hasClass("active")){
+    if($(".movies span:nth-child(2)").hasClass("active")){
      
-         $("span").css({
+         $(".movies span").css({
           visibility:'visible'
           });
-          $("span:nth-child(1)").css({
+          $(".movies span:nth-child(1)").css({
             visibility: 'hidden'
           });
-          $(".video").animate({
+          $(".movies").animate({
             top: '-=100%'
           },
           {
@@ -183,36 +183,36 @@ export class IntroComponent implements OnInit {
             easing: "linear",
             complete: function() {
               
-              $("span:nth-child(1)").css({
+              $(".movies span:nth-child(1)").css({
                 top: '100%'
               });
-              $("span:nth-child(3)").css({
+              $(".movies span:nth-child(3)").css({
                 top: '0%'
               });
-              $("span:nth-child(2)").css({
+              $(".movies span:nth-child(2)").css({
                 top: '100%'  
               });
-              $(".video").css({
+              $(".movies").css({
                 top: '0%'
               });
-              $("span:nth-child(2)").removeClass('active');
-              $("span:nth-child(3)").addClass('active');
-              $("span:nth-child(3)").removeClass('prev');
-              $("span:nth-child(1)").addClass('prev');
+              $(".movies span:nth-child(2)").removeClass('active');
+              $(".movies span:nth-child(3)").addClass('active');
+              $(".movies span:nth-child(3)").removeClass('prev');
+              $(".movies span:nth-child(1)").addClass('prev');
             }
           });
           
     }
 
-    if($("span:nth-child(3)").hasClass("active")){
+    if($(".movies span:nth-child(3)").hasClass("active")){
       
-         $("span").css({
+         $(".movies span").css({
           visibility:'visible'
           });
-          $("span:nth-child(2)").css({
+          $(".movies span:nth-child(2)").css({
             visibility: 'hidden'
           });
-        $(".video").animate({
+        $(".movies").animate({
             top: '-=100%'
           },
           {
@@ -220,22 +220,22 @@ export class IntroComponent implements OnInit {
             easing: "linear",
             complete: function() {
               
-              $("span:nth-child(1)").css({
+              $(".movies span:nth-child(1)").css({
                 top: '0%'
               });
-              $("span:nth-child(3)").css({
+              $(".movies span:nth-child(3)").css({
                 top: '100%'
               });
-              $("span:nth-child(2)").css({
+              $(".movies span:nth-child(2)").css({
                 top: '100%'  
               });
-              $(".video").css({
+              $(".movies").css({
                 top: '0%'
               });
-              $("span:nth-child(3)").removeClass('active');
-              $("span:nth-child(1)").addClass('active');
-              $("span:first-child").removeClass('prev');
-              $("span:nth-child(2)").addClass('prev');
+              $(".movies span:nth-child(3)").removeClass('active');
+              $(".movies span:nth-child(1)").addClass('active');
+              $(".movies span:first-child").removeClass('prev');
+              $(".movies span:nth-child(2)").addClass('prev');
             }
           });
     }
