@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery'; 
 
 @Component({
   selector: 'app-astrology',
@@ -9,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class AstrologyComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  }
 
-  ngOnInit() { } 
+  ngOnInit() {
+  	$(".astrology").bind("DOMMouseScroll mousewheel", function (event) {
+  		console.log('hello'+ JSON.stringify(event));
+  	});
+  } 
 }
