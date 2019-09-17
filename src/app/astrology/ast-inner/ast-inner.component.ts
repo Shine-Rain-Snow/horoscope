@@ -100,6 +100,16 @@ export class AstInnerComponent implements OnInit {
    $(".sunsign_img").children().css({
    	height: hei*0.3+'px'	
    })
+    $(".left_img img").css("visibility", "visible");
+    $(".left_img").css("background-size", "0 0");
+    $(".left_img").hover(function(){
+        $(this).css("background-size", "cover");
+        $(".left_img img").css("visibility", "hidden");
+    }, function(){
+        $(this).css("background-size", "0 0");
+        $(".left_img img").css("visibility", "visible");
+    });
+ 
   }
 
   goAstrology() {

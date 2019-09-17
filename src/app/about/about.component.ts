@@ -41,7 +41,7 @@ export class AboutComponent implements OnInit {
           this.next = 0;
           this.sunService.setAboutVal(0);
           this.sunService.setAstVal(100);
-          this.router.navigate(['/astrology']);    
+          this.router.navigate(['/astrology/ast-inner']);    
         }
         this.sunService.setAboutVal(this.next * 10);
         

@@ -2,18 +2,16 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
     height: 100%;   
 }
 
-mat-sidenav-content {
-
-}
-
 mat-sidenav {
     width: 250px;
-    cursor: pointer;
+	cursor: pointer;
+	
 }
  
 mat-sidenav {
-	background-color: #3C3C3C;
+	// background-color: #3C3C3C;
 	width: 60%;
+	background: transparent;
 }
 
 .progress {

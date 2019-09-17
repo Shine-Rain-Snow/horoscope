@@ -4,7 +4,8 @@
 }
 
 .ast-inner-container {
-	background-color: rgb(167,194,178);
+	// background-color: rgb(167,194,178);
+	background-color: #F8F6FA;
 	height: 100%;
 	width: 100%;
 	z-index: 20;
@@ -105,12 +106,16 @@ img {
 		width: 30%;
 		white-space: break-spaces;
 		overflow: hidden;
+		line-height: 30px;
+		text-overflow: ellipsis;
 	}
 	.right_text {
 		text-align: left;
 		width: 30%;
 		white-space: break-spaces;
 		overflow: hidden;
+		line-height: 30px;
+		text-overflow: ellipsis;
 	}	
 	.mid_img {
 		text-align: center;
@@ -126,12 +131,19 @@ img {
 	display: flex;
 	align-items: center;
   	justify-content: center;
-  	
+  	margin-top: 20px;
 	.left_img {
 		width: 30%;
 		position: relative;
+		background-image: url('../../../assets/img/astInner/aries_taurus/aries_hover.jpg');
+		background-position: center;
+ 	 	background-repeat: no-repeat;
+ 	 	background-size: cover;
+		cursor: pointer;
+		z-index: 0;
 		img:first-child {
 			width: 80%;
+			visibility: hidden;
 		}
 		img:last-child {
 			max-width: 20%;
@@ -140,8 +152,12 @@ img {
 			position: absolute;
 			top: 50%;
 			left: 75%;
+			visibility: hidden;
 		}
 	}
+
+	
+
 	.none_img {
 		width: 30%;
 		height: 200px;

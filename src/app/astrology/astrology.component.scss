@@ -22,7 +22,9 @@
 video#backgroundvid { 
   position: fixed; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
+  width: auto; 
+  height: auto; 
+  z-index: -100;
   // background: url('../../assets/img/astrology.jpg') no-repeat;
   background-size: cover; 
 }
@@ -56,17 +58,17 @@ $main-color: #23abd4;
 .ast_entry_title {
   font-weight: bold;
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 10%;
   width: 25%;
   color: white;
   height: auto;
-  font-size: 26px;
+  font-size: 30px;
   cursor: pointer;
 }
 
 .ast_entry_title {
-	
+
       text-decoration:none;
       display:block;
       padding:5px 0;
@@ -93,7 +95,7 @@ $main-color: #23abd4;
 }
 
 .ast-title {
-  
+  font-weight: bold;
   font-size: 26px;
   position: absolute;
   color: white;

@@ -1,10 +1,11 @@
 .intro_opacity {
 	background-color: rgb(64,66,105);
+	width: 100%;
 	height: 100%; 
 }
 
 .intro {
-	
+	width: 100%;
 	height: 100%; 
 	background-position: center;
   	background-repeat: no-repeat;
@@ -14,6 +15,7 @@
 
 .flow-bottom-top {
 	height: 100%;
+	width: 100%;
 }
 
 .show_window {
@@ -27,21 +29,22 @@
 }
 
 .photo {
-	width: 500px;
+	
+	width: 60%;
 	height: 100%;
 	position: absolute;
-	right: 3%;
+	right: 0%;
 	top: 0%;
 }
 
 .photo span {
-	width: 500px;
-
+	right: 0%;
 }
 
 .opt {
 	background-color: rgb(0, 0, 0, .8);
 	width: 300px;
+	// width: 100%;
 	height: 400px;	
 	float: right;
 }
@@ -56,15 +59,16 @@
 
 .photo img {
 	width: 300px;
+	// width: 100%;
 	height: 400px;
 	// margin-top: 20px;
- 	opacity: 0.3;
+	opacity: 0.3;
+	position: relative;
+	right: 0%;
     filter: alpha(opacity=30); 
-    float: right;
+
 
 }
-
-
 
 .photo video {
 	opacity: 0.3;
@@ -82,7 +86,7 @@
 }
 
 .photo video {
-	padding-right: 100px;
+	// padding-right: 100px;
 }
 
 .movies video {
@@ -108,21 +112,24 @@
 
 
 .photo_1, .video_1 {
-	width: 400px;
+	// width: 400px;
+	width: 60%;
 	height: 100%;
 	position: absolute;
 	top: 0%;
 	cursor: pointer;
 }
 .photo_2, .video_2 {
-	width: 400px;
+	// width: 400px;
+	width: 60%;
 	height: 100%;
 	position: absolute;
 	top: 100%;
 	cursor: pointer;
 }
 .photo_3, .video_3 {
-	width: 400px;
+	// width: 400px;
+	width: 60%;
 	height: 100%;
 	position: absolute;
 	top: 100%;
@@ -135,27 +142,15 @@
 	width: 30%;
 	height: auto;
 	position: absolute;
-	top: 22%;
+	top: 30%;
 	left: 10%;
 	color: white;
-	z-index: 25;
-}
-
-
-.intro_text {
-	width: 30%;
-	height: auto;
-	position: absolute;
-	top: 20%;
-	left: 10%;
-	// color: rgb(64,66,105);
-	
 	z-index: 25;
 }
 
 .intro_text_title {
 	color: white;
-	font-weight: 1000;
+	font-weight: bold;
 	font-size: 120px;
 	line-height: 120px;
 }
@@ -171,7 +166,7 @@
 .method-1 {
   position: relative;
   display: inline-block;
-  font-weight: 700;
+  
   &:before {
     content: attr(data-text);
     position: absolute;
@@ -202,7 +197,7 @@
 }
 
 .intro-title {
-	
+	font-weight: bold;
 	font-size: 26px;
     position: absolute;
     color: white;
