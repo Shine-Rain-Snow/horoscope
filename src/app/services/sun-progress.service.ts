@@ -12,6 +12,7 @@ export class SunProgressService {
 
   mIntro;
   mAst;
+  mAbout;
   setIntroVal(value) {
     this.globals.gIntro =  value;
     this.mIntro = value;
@@ -28,6 +29,15 @@ export class SunProgressService {
 
   getAstVal() {
     return this.mAst;
+  }
+
+  setAboutVal(value) {
+    this.globals.gAbout =  value;
+    this.mAbout = value;
+  }
+
+  getAboutVal() {
+    return this.mAbout;
   }
   
   // public getIntroVal(): any {

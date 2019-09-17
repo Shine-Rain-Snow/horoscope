@@ -16,7 +16,7 @@ export class ProgressbarComponent implements OnInit {
     private sunService: SunProgressService) { }
   introVal: number;
   astVal: number;
-  tarotVal: number;
+  contactVal: number;
   aboutVal: number;
   counselingVal: number;
 
@@ -31,10 +31,10 @@ export class ProgressbarComponent implements OnInit {
     this.myVar = setInterval(() => {
       this.introVal = this.sunService.getIntroVal();
       this.astVal = this.sunService.getAstVal();
+      this.aboutVal = this.sunService.getAboutVal();
     }, 10);
     
-    this.tarotVal = this.stateData.gTarot;
-    this.aboutVal = this.stateData.gAbout;
+    this.contactVal = this.stateData.gContact;
     this.counselingVal = this.stateData.gCounseling;
   }
 
@@ -43,15 +43,24 @@ export class ProgressbarComponent implements OnInit {
   }
 
   onIntro() {
-    console.log(this.stateData);
-    if(this.stateData.gIntro == 100) {
-      this.stateData.gAst = 0;
-      this.stateData.gTarot = 0;
-      this.stateData.gAbout = 0;
-      this.stateData.gCounseling = 0;
-      this.sunService.setAstVal(0);
-    }
+   
+    
+    this.sunService.setIntroVal(0);
+    this.sunService.setAstVal(0);
+    this.sunService.setAboutVal(0);
     this.router.navigate(['/intro']);
+  }
+
+  onAst() {
+    this.sunService.setAstVal(0);
+    this.sunService.setIntroVal(100);
+    this.router.navigate(['/astrology']);
+  }
+
+  onAbout() {
+    this.sunService.setAstVal(100);
+    this.sunService.setIntroVal(100);
+    this.router.navigate(['/about']);
   }
   
 }

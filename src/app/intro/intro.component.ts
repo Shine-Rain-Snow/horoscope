@@ -20,9 +20,9 @@ export class IntroComponent implements OnInit {
   next: number = 0;
   ngOnInit() {
    
-    if(this.stateData.gIntro == 0) 
+    if(this.sunService.getIntroVal() == 0) 
       this.next = 0;
-    if(this.stateData.gIntro == 100)
+    if(this.sunService.getIntroVal() == 100)
       this.next = AppConstants.SCROLLING_COUNT;
     $(".intro").bind("DOMMouseScroll mousewheel", (event) => {  
       if(event.originalEvent.detail > 0) {
@@ -52,7 +52,6 @@ export class IntroComponent implements OnInit {
 
   ngOnDestroy() {
     if(this.next >= 0 && this.next <= AppConstants.SCROLLING_COUNT) {
-      this.stateData.gIntro = 100;
       this.sunService.setIntroVal(100);
     }
   }

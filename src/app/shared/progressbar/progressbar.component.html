@@ -8,7 +8,7 @@
       </mat-progress-bar>   
       <div class="bar_text">Introduction</div>   
     </div>
-    <div routerLink="/astrology"  class="progress-section">
+    <div (click)="onAst()"  class="progress-section">
       <mat-progress-bar
           class="progress-margin"
           [mode]="mode"
@@ -17,34 +17,32 @@
       </mat-progress-bar>  
       <div class="bar_text">Astrology</div>      
     </div>
-    <div routerLink="/tarot" class="progress-section">
+    <div (click)="onAbout()"class="progress-section">
       <mat-progress-bar
           class="progress-margin"
-          [mode]="mode"
-          [value]="tarotVal"
-          [bufferValue]="bufferValue">
-      </mat-progress-bar>    
-      <div class="bar_text">Tarot</div>    
-    </div>
-    <div routerLink="/about" class="progress-section">
-      <mat-progress-bar
-          class="progress-margin"
-          
           [mode]="mode"
           [value]="aboutVal"
           [bufferValue]="bufferValue">
-      </mat-progress-bar>      
-      <div class="bar_text">About</div>  
+      </mat-progress-bar>    
+      <div class="bar_text">About</div>    
     </div>
     <div routerLink="/counseling" class="progress-section">
       <mat-progress-bar
-          class="progress-margin"
-          
+          class="progress-margin"          
           [mode]="mode"
           [value]="counselingVal"
           [bufferValue]="bufferValue">
+      </mat-progress-bar>      
+      <div class="bar_text">Book a session</div>  
+    </div>
+    <div routerLink="/contact" class="progress-section">
+      <mat-progress-bar
+          class="progress-margin"          
+          [mode]="mode"
+          [value]="contactVal"
+          [bufferValue]="bufferValue">
       </mat-progress-bar>    
-      <div class="bar_text">Counseling</div>    
+      <div class="bar_text">Contact</div>    
     </div>
   </div>
 </div>
