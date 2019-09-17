@@ -1,21 +1,62 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppConstants } from '../shared/constants';
+import { SunProgressService } from '../services/sun-progress.service';
+import { Globals } from '../shared/globals';
 import * as $ from 'jquery';
 
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.scss']
+  styleUrls: ['./intro.component.scss'],
+  providers: [],
 })
 export class IntroComponent implements OnInit {
  
-  constructor() { }
+  constructor(private router: Router, 
+    private sunService: SunProgressService,
+    private stateData: Globals) { }
 
+  next: number = 0;
   ngOnInit() {
+   
+    if(this.stateData.gIntro == 0) 
+      this.next = 0;
+    if(this.stateData.gIntro == 100)
+      this.next = AppConstants.SCROLLING_COUNT;
+    $(".intro").bind("DOMMouseScroll mousewheel", (event) => {  
+      if(event.originalEvent.detail > 0) {
+        //scroll down
+        this.next++;
+        this.sunService.setIntroVal(this.next * 10); 
+        if(this.next > AppConstants.SCROLLING_COUNT){
+          this.router.navigate(['/astrology']);
+          this.sunService.setIntroVal(100);
+        }
+          
+            
+      } else {
+        //scroll up
+        this.next--;
+        if(this.next < 0) {
+          this.next = 0;
+          this.sunService.setIntroVal(0);
+        }
+        this.sunService.setIntroVal(this.next * 10);
+        //this.router.navigate(['/intro']);    
+      }
+    });
     this.movePhoto();
-    //this.moveVideo();
-     setInterval(this.movePhoto, 11600);
-     //setInterval(this.moveVideo, 11600);
+    setInterval(this.movePhoto, 11600);
   }
+
+  ngOnDestroy() {
+    if(this.next >= 0 && this.next <= AppConstants.SCROLLING_COUNT) {
+      this.stateData.gIntro = 100;
+      this.sunService.setIntroVal(100);
+    }
+  }
+
   movePhoto() {
     if($(".photo span:first-child").hasClass("active")){
      

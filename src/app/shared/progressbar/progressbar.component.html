@@ -1,9 +1,9 @@
 <div class="progressbar">
   <div class="progress_container">
-    <div routerLink="/intro" class="progress-section">
+    <div (click)="onIntro()" class="progress-section">
       <mat-progress-bar
           class="progress-margin"
-          [value]="value"
+          [value]="introVal"
           [bufferValue]="bufferValue">
       </mat-progress-bar>   
       <div class="bar_text">Introduction</div>   
@@ -12,7 +12,7 @@
       <mat-progress-bar
           class="progress-margin"
           [mode]="mode"
-          [value]="value"
+          [value]="astVal"
           [bufferValue]="bufferValue">
       </mat-progress-bar>  
       <div class="bar_text">Astrology</div>      
@@ -21,7 +21,7 @@
       <mat-progress-bar
           class="progress-margin"
           [mode]="mode"
-          [value]="value"
+          [value]="tarotVal"
           [bufferValue]="bufferValue">
       </mat-progress-bar>    
       <div class="bar_text">Tarot</div>    
@@ -31,7 +31,7 @@
           class="progress-margin"
           
           [mode]="mode"
-          [value]="value"
+          [value]="aboutVal"
           [bufferValue]="bufferValue">
       </mat-progress-bar>      
       <div class="bar_text">About</div>  
@@ -41,7 +41,7 @@
           class="progress-margin"
           
           [mode]="mode"
-          [value]="value"
+          [value]="counselingVal"
           [bufferValue]="bufferValue">
       </mat-progress-bar>    
       <div class="bar_text">Counseling</div>    

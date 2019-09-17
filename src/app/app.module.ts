@@ -9,6 +9,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { SidenavListComponent } from './shared/sidenav-list/sidenav-list.component';
 import { ProgressbarComponent } from './shared/progressbar/progressbar.component';
+import { Globals } from './shared/globals';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ProgressbarComponent } from './shared/progressbar/progressbar.component
     FlexLayoutModule,
   ],
   exports: [],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
